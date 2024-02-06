@@ -12,32 +12,61 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!--nav section-->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo"><img src="images/Logo.jpg" alt="logo" /></div>
+    <!--navigation section-->
+    <navigation>
+      <nav>
+        <img class="logo" src="images/Logo.jpg" alt="logo" />
+
         <ul class="nav">
-          <li>
-            <a href="#">Product</a>
-          </li>
-          <li>
-            <a href="#">Customers </a>
-          </li>
-          <li>
-            <a href="#">Pricng</a>
-          </li>
-          <li>
-            <a href="#">Resources</a>
-          </li>
-          <li>
-            <a href="#"><button>Sign In</button></a>
-          </li>
-          <li>
-            <a href="#"><button>Sign Up</button></a>
-          </li>
+          <a href="#" target="_blank"><li>Product</li></a>
+          <a href="#" target="_blank"><li>Customers</li></a>
+          <a href="#" target="_blank"><li>Pricng</li></a>
+          <a href="#" target="_blank"><li>Resources</li></a>
+
+          <a href="#" target="_blank"
+            ><li><button class="nav-btn sign-in">Sign In</button></li></a
+          >
+          <a href="#" target="_blank"
+            ><li><button class="nav-btn sign-up">Sign Up</button></li></a
+          >
         </ul>
+      </nav>
+    </navigation>
+    <!--end of navigation section-->
+
+    <!--main section-->
+    <main>
+      <div class="container">
+        <!--Header section-->
+        <div class="card">
+          <div class="header">
+            <section>
+              <h1 class="header-title">The Design Thinking superpowers</h1>
+              <p class="header-info">
+                Tools, tutorials, design and innovation experts, all in one
+                place! The most intuitive way to imagine your next user
+                experience.
+              </p>
+              <a href="#" target="_blank">
+                <button class="btn get-started-btn">Get started</button>
+              </a>
+              <a href="#" target="_blank">
+               <img src="images/" alt="">
+              </a>
+            </section>
+
+            <section>
+              <img
+                class="main-img"
+                src="images/Image-header.jpg"
+                alt="header image"
+              />
+            </section>
+          </div>
+        </div>
       </div>
-    </nav>
-    <!--end of nav section-->
+    </main>
+
+    <!--end of main section-->
   </body>
 </html>

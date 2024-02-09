@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Position</title>
+    <script
+      src="https://kit.fontawesome.com/6c722e42cf.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,25 +21,35 @@
 
     <link rel="stylesheet" href="styles/index.css" />
   </head>
+
   <body>
     <!--navigation section-->
-    <navigation>
-      <nav>
-        <img class="logo" src="images/Logo.jpg" alt="logo" />
+    <header class="header">
+      <a href="/" class="header-logo">
+        <img src="images/Logo.jpg" alt="Productly's logo" />
+      </a>
 
-        <ul class="nav">
-         <li> <a href="#" >Product</li></a>
-          <<li>a href="#" >Customers</li></a>
-          <li><a href="#" >Pricng</li></a>
-          <li><a href="#" >Resources</li></a>
-          <li><a href="#">
-            <button class="nav-btn sign-in">Sign In</button>
-          </li></a>
-          <li><a href="#"><button class="nav-btn sign-up">Sign Up</button>
-          </li></a>
+      <nav class="header-nav">
+        <ul class="header-nav__list" role="list">
+          <li>
+            <a href="#"> Products </a>
+          </li>
+          <li>
+            <a href="#">Customers</a>
+          </li>
+          <li>
+            <a href="#"> Pricng </a>
+          </li>
+          <li>
+            <a href="#"> Resources </a>
+          </li>
         </ul>
+        <div>
+          <a href=""><button class="btn-box sign-in">Sign In</button></a>
+          <a href=""><button class="btn-box sign-up">Sign Up</button></a>
+        </div>
       </nav>
-    </navigation>
+    </header>
     <!--end of navigation section-->
 
     <!--main section-->
@@ -48,12 +62,12 @@
             Tools, tutorials, design and innovation experts, all in one place!
             The most intuitive way to imagine your next user experience.
           </p>
-          <a href="#" target="_blank">
+          <a href="#">
             <button class="btn get-started-btn">Get started</button>
           </a>
-          <img class="video-icon" src="images/triangle-icon.jpg" alt="" /><a
-            href="#"
-            target="_blank"
+
+          <a href="#"
+            ><i class="fa-solid fa-play"></i
             ><span class="video">Watch the Video</span></a
           >
         </section>
@@ -73,9 +87,9 @@
     <section>
       <div class="feature">
         <section>
-          <h3 class="feature-title">
+          <h1 class="feature-title">
             We design tools to unveil your superpowers
-          </h3>
+          </h1>
         </section>
 
         <section>
@@ -122,7 +136,7 @@
       <section>
         <div>
           <p class="effortless-info">Effortless Validation for</p>
-          <h3 class="effortless-title">Design Professionals</h3>
+          <h1 class="effortless-title">Design Professionals</h1>
           <p class="effortless-info">
             The Myspace page defines the individual, his or her characteristics,
             traits, personal choices and the overall personality of the person.
@@ -186,12 +200,12 @@
       <section>
         <div>
           <p class="product-manager-info">Effortless Validation for</p>
-          <h3
+          <h1
             style="font-size: 36px; font-weight: 700"
             class="product-manager-title"
           >
             Design Professionals
-          </h3>
+          </h1>
           <p class="product-manager-info">
             The Myspace page defines the individual, his or her characteristics,
             traits, personal choices and the overall personality of the person.
@@ -296,68 +310,61 @@
     <!--end of marketers section-->
 
     <!--footer-->
+    <footer>
+      <div>
+        <a href="#" class="footer-logo"
+          ><img src="images/Logo.jpg" alt="" />
+        </a>
+      </div>
 
-    <section >
-      <div class="feature-card footer">
-        <div class="card">
-          <img
-            style="position: absolute; left: 0%; bottom: 0%;"
-            class=""
-            src="images/Logo.jpg"
-            alt="logo"
-          />
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-nav" role="list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="/Products"> Our Products </a>
+          </li>
+          <li>
+            <a href="/About">About us</a>
+          </li>
+          <li>
+            <a href="/Gallery"> Gallery </a>
+          </li>
+          <li>
+            <a href="/Contact"> Contact us </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Legal Stuff</h3>
+        <ul class="footer-nav" role="list">
+          <li>
+            <a href="#">Disclaimer</a>
+          </li>
+          <li>
+            <a href="#">Financing</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-news">
+          <h3>knowing you're always on the best energy deal.</h3>
+          <label for="email"></label>
+          <input type="email" placeholder="Enter your phone Number" />
+          <button class="btn-box sign-in-now flex-start">Sign up Now</button>
         </div>
       </div>
-    </section>
-
-    <section style="position: absolute;  right:0;">
-      <div class="feature-card center">
-        <div class="card jusifile nav navigation">
-          <form style="position: absolute; right: 0; margin-right: 70px;"
-          
-            action="#">
-            <label for="phone"> </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Enter your phone number"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-            />
-          </form>
-          <a href="#"><button class="btn center">SIGN UP NOW</button></a>
-        </div>
-      </div>
-    </section>
-
-    <section style="position: absolute; right: 20; left: 20;">
-      <div class="feature-card jusifile">
-        <div class="card ">
-          <ul class="jusifile nav navigation">
-            <li><a class="card-info" href="#">Disclaimer</a></li>
-            <li><a class="card-info" href="#">Financing</a></li>
-            <li><a class="card-info" href="#">Contact</a></li>
-            <li><a class="card-info" href="#">FAQ</a></li>
-          </ul>
-          
-        </div>
-      </div>
-    </section>
-
-    <section style="position: absolute; right: 0; left: 0;">
-      <div class="feature-card jusifile">
-        <div class="card">
-          
-          <ul class="jusifile nav navigation">
-            <li><a class="card-info" href="#">About Us</a></li>
-            <li><a class="card-info" href="#">Blog</a></li>
-            <li><a class="card-info" href="#">Contact</a></li>
-            <li><a class="card-info" href="#">FAQ</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    </footer>
     <!--end of footer-->
   </body>
 </html>
